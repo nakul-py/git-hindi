@@ -1,4 +1,4 @@
-# GITHUB 
+# README.MD 
 
 A simple Python-based application that fetches real-time weather data from the OpenWeatherMap API. It provides current weather details and forecasts for cities worldwide.
 
