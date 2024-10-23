@@ -2,8 +2,8 @@
 # print ("HI THERE!")
 # print("I AM NAKUL")
 
-# Variable = A container for a value (string, integer, float, boolean)
-#            Avariable behaves as if it was the value it contains
+## Variable = A container for a value (string, integer, float, boolean)
+##            Avariable behaves as if it was the value it contains
  
 # Strings
 
@@ -50,18 +50,54 @@
 #else:
 #   print("This item is Not available")    
 
-# Typescript = the process of converting a variable from one datatype to another
-#              str(), int(), float(), bool()
+## Typescript = the process of converting a variable from one datatype to another
+##              str(), int(), float(), bool()
 
-name = "Nakul Verma"
-age = 25
-height = 6.6
-is_student = True
+#name = "Nakul Verma"
+#age = 25
+#height = 6.6
+#is_student = True
 
-age = float(age)
+#age = float(age)
 
-print(age)
+#print(age)
 
-name = bool(name)
+#name = bool(name)
 
-print(name)
+#print(name)
+
+## input() = A function that prompts the user to enter data
+##           Returns the entered data as a string
+
+#name = input("What is your name: ")
+#age = int(input("How old are you: "))
+#dob = input("What is your date of birth: ")
+
+#age = age + 1
+
+#print(f"Hello {name}!")
+#print(f"Your date of birth is {dob}")
+#print(f"HAPPY BIRTHDAY! you are now {age} years old.")
+
+
+## Exercise 1 - Calculate Rectangle Area
+
+length = float(input("Enter the length of rectangle: "))
+width = float(input("Enter the width of rectangle: "))
+area = length * width
+
+#print(f"The area of rectangle is: {area}cm^2")
+
+# Exercise 2 - Shopping cart Program
+
+item = input("What item would you would you like to buy?: ")
+price = float(input("What is the price?: "))
+quantity = int(input("How many would you like?: "))
+total = price * quantity
+
+
+print(f"The total price is {total} rupees.")
+pay = input(f"You have to pay {total} rupees type Enter to pay")
+bill = input(f"Enter the amount you have to pay: ")
+print(f"You have payed {total} rupees.")
+print(f"You have bought {quantity} {item}'s")
