@@ -82,22 +82,78 @@
 
 ## Exercise 1 - Calculate Rectangle Area
 
-length = float(input("Enter the length of rectangle: "))
-width = float(input("Enter the width of rectangle: "))
-area = length * width
+#length = float(input("Enter the length of rectangle: "))
+#width = float(input("Enter the width of rectangle: "))
+#area = length * width
 
 #print(f"The area of rectangle is: {area}cm^2")
 
 # Exercise 2 - Shopping cart Program
 
-item = input("What item would you would you like to buy?: ")
-price = float(input("What is the price?: "))
-quantity = int(input("How many would you like?: "))
-total = price * quantity
+#item = input("What item would you would you like to buy?: ")
+#price = float(input("What is the price?: "))
+#quantity = int(input("How many would you like?: "))
+#total = price * quantity
 
 
-print(f"The total price is {total} rupees.")
-pay = input(f"You have to pay {total} rupees type Enter to pay")
-bill = input(f"Enter the amount you have to pay: ")
-print(f"You have payed {total} rupees.")
-print(f"You have bought {quantity} {item}'s")
+#print(f"The total price is {total} rupees.")
+#pay = input(f"You have to pay {total} rupees type Enter to pay")
+#bill = input(f"Enter the amount you have to pay: ")
+#print(f"You have payed {total} rupees.")
+#print(f"You have bought {quantity} {item}'s")
+
+
+## Logical operators = evaluate multiple conditions (or, and, not)
+##                    or = at least one condition must be true
+##                    and = both condition must be true
+##                    not = inverts the condition (not False, not True)
+
+
+#temp = 20
+#is_sunny = False
+
+#if temp >= 28 and is_sunny:
+#    print("It is HOT outside. ")
+#    print("It is SUNNY.")
+#elif temp <= 0 and is_sunny:
+#    print("It is COLD outside. ")
+#    print("It is SUNNY.")
+#elif 28 > temp > 0 and is_sunny:
+#    print("It is WARM outside. ")
+#    print("It is SUNNY.")
+#elif temp >= 28 and not is_sunny:
+ #   print("It is HOT outside. ")
+  #  print("It is CLOUDY.")
+#elif temp <= 0 and not is_sunny:
+ #   print("It is COLD outside. ")
+  #  print("It is CLOUDY.")
+#elif 28 > temp > 0 and not is_sunny:
+ #   print("It is WARM outside. ")
+  #  print("It is CLOUDY.")
+
+## Conditional experessions = A one-line shortcut for the if-else statement  (ternary operator)
+##                            Print or assign one of two values based on a condition
+##                            X if condition else Y
+
+
+#num = 9
+#a = 5
+#b = 8
+#age = 25
+#temperature = 29
+#user_role = "admin"
+
+#print("Posative" if num > 0 else "Negative")
+#result = "Even" if num % 2 == 0 else "Odd"
+#max_num = a if a > b else b
+#min_num = a if a < b else b
+#status = "Adult" if age >= 18 else "Old"
+#weather = "Hot" if temperature > 35 else  "Cold" if temperature < 10 else "Warm"
+#acess_level = "Yes" if user_role == "admin" else "No"
+
+#print(result)
+#print(max_num)
+#print(min_num)
+#print(status)
+#print(weather)
+#print(acess_level)
