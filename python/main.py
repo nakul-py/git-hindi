@@ -157,3 +157,21 @@
 #print(status)
 #print(weather)
 #print(acess_level)
+
+## indexing = acessing elements of a sequence using [] (indexing operator)
+##             [start: end: step]
+
+
+credit_number = "1234-3456-6789-0123"
+
+#print(credit_number[0])
+#print(credit_number[:4])
+#print(credit_number[6:9])
+#print(credit_number[5:])
+#print(credit_number[-4])
+#print(credit_number[::2])
+credit_number = credit_number[::-1]
+
+#last_digits = credit_number[-4:]
+#print(f"AAAA-AAAA-AAAA-{last_digits}")
+print(credit_number)
