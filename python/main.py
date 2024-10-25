@@ -1,7 +1,7 @@
 
 # print ("HI THERE!")
 # print("I AM NAKUL")
-
+#---------------------------------------------------------------------------------------
 ## Variable = A container for a value (string, integer, float, boolean)
 ##            Avariable behaves as if it was the value it contains
  
@@ -50,6 +50,8 @@
 #else:
 #   print("This item is Not available")    
 
+#-------------------------------------------------------------------------
+
 ## Typescript = the process of converting a variable from one datatype to another
 ##              str(), int(), float(), bool()
 
@@ -65,6 +67,8 @@
 #name = bool(name)
 
 #print(name)
+
+#---------------------------------------------------------------------------------
 
 ## input() = A function that prompts the user to enter data
 ##           Returns the entered data as a string
@@ -102,6 +106,7 @@
 #print(f"You have payed {total} rupees.")
 #print(f"You have bought {quantity} {item}'s")
 
+#---------------------------------------------------------------------------
 
 ## Logical operators = evaluate multiple conditions (or, and, not)
 ##                    or = at least one condition must be true
@@ -131,6 +136,8 @@
  #   print("It is WARM outside. ")
   #  print("It is CLOUDY.")
 
+#-------------------------------------------------------------------------------------
+
 ## Conditional experessions = A one-line shortcut for the if-else statement  (ternary operator)
 ##                            Print or assign one of two values based on a condition
 ##                            X if condition else Y
@@ -158,11 +165,13 @@
 #print(weather)
 #print(acess_level)
 
+#---------------------------------------------------------------------------------------
+
 ## indexing = acessing elements of a sequence using [] (indexing operator)
 ##             [start: end: step]
 
 
-credit_number = "1234-3456-6789-0123"
+#credit_number = "1234-3456-6789-0123"
 
 #print(credit_number[0])
 #print(credit_number[:4])
@@ -170,8 +179,50 @@ credit_number = "1234-3456-6789-0123"
 #print(credit_number[5:])
 #print(credit_number[-4])
 #print(credit_number[::2])
-credit_number = credit_number[::-1]
+#credit_number = credit_number[::-1]
 
 #last_digits = credit_number[-4:]
 #print(f"AAAA-AAAA-AAAA-{last_digits}")
-print(credit_number)
+#print(credit_number)
+
+#-----------------------------------------------------------------------------------------
+
+## while loop = execute some code WHILE some condition remains true
+
+## ex-1
+
+#name = input("Enter your name: ")
+
+#while name == "":
+#    print("You did not enter your name")
+#    name = input("Enter your name: ")
+    
+#    print(f"Hello {name}")
+
+## ex-2
+
+#age = int(input("Enter your name: "))
+
+#while age < 0:
+#    print("Age can't be negative")
+#    age = int(input("Enter your age: "))
+
+#print (f"You are {age} years old")
+
+## ex-3
+
+#food = input("Enter the food you like: ")
+
+#while not food == "q":
+#    print(f"You like {food}")
+#    food = input("Enter another food you like (q to quit): ")
+
+#print("ok you will get your food soon. ")
+
+num = int(input("Enter a # between 1 - 10: ")) 
+
+while num < 1 or num > 10:
+    print(f"{num} is not valid") 
+    num = int(input("Enter a # between 1 - 10: "))
+
+print(f"Your name is {num}")    
