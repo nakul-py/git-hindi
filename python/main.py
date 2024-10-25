@@ -219,10 +219,43 @@
 
 #print("ok you will get your food soon. ")
 
-num = int(input("Enter a # between 1 - 10: ")) 
+#num = int(input("Enter a # between 1 - 10: ")) 
 
-while num < 1 or num > 10:
-    print(f"{num} is not valid") 
-    num = int(input("Enter a # between 1 - 10: "))
+#while num < 1 or num > 10:
+#    print(f"{num} is not valid") 
+#    num = int(input("Enter a # between 1 - 10: "))
 
-print(f"Your name is {num}")    
+#print(f"Your name is {num}")   
+ 
+#------------------------------------------------------------------
+
+## for loops = execute a block of code a fixed number of times.
+#              You can iterate over a range, string, sequence, etc.
+
+#for x in reversed(range(1, 11)):
+#    print(x)
+#for x in reversed(range(1, 11)):
+#    print(x)
+#for x in range(1, 11, 2):
+#    print(x)
+
+#for x in range(1, 21):
+#    if x == 20:
+#        break
+#    else:
+#        print(x)
+
+#--------------------------------------------------------------------------
+
+## nested loop = A loop within another loop (outer, inner)
+#                    outer loop:
+#                          inner loop:
+
+rows = int(input("Enter the # of rows: "))
+columns = int(input("Enter the * of columns: "))
+symbol = input("Enter a symbol to use: ")
+
+for y in range(rows):
+    for x in range(columns):
+        print(symbol, end=" ")
+    print()
