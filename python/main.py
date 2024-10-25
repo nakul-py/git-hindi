@@ -251,11 +251,60 @@
 #                    outer loop:
 #                          inner loop:
 
-rows = int(input("Enter the # of rows: "))
-columns = int(input("Enter the * of columns: "))
-symbol = input("Enter a symbol to use: ")
+#rows = int(input("Enter the # of rows: "))
+#columns = int(input("Enter the * of columns: "))
+#symbol = input("Enter a symbol to use: ")
 
-for y in range(rows):
-    for x in range(columns):
-        print(symbol, end=" ")
-    print()
+#for y in range(rows):
+#    for x in range(columns):
+#        print(symbol, end=" ")
+#    print()
+
+#----------------------------------------------------------------------------
+
+## collection = single "variable" used to store multiple values
+#    List = [] ordered and changable. Duplicates OK
+#    Set  = {} unordered and immutable, but Add/Remove OK. NO Duplicates
+#   Tuple = () ordered and unchangable. Duplicates OK. FASTER
+
+# LIST --------
+
+#fruit = ["apple", "orange", "kiwi", "red"]
+
+# print(fruit[0])
+# for x in fruit:
+# print(x)
+
+# print("apple" in fruit)
+# fruit.append("blue")
+# fruit.remove("red")
+# fruit.insert(2, "green")
+# fruit.sort()
+# fruit.reverse()
+# fruit.clear()
+# print(fruit.index("red"))
+# print(fruit.count("kiwi"))
+
+#print (fruit)
+
+# SET ---------
+
+# color = {"red", "green", "blue", "pink", "red"}
+
+# color.add("yellow")
+# color.remove("red")
+# color.pop()
+
+# print (color)
+
+# TUPLE -------
+ 
+vegs = ("potato", "abc", "efg", "hig" ,"abc")
+
+# print(vegs.index("abc"))
+# print(vegs.count("abc"))
+
+for a in vegs:
+    print(a)
+
+#print(vegs)
