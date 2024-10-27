@@ -69,11 +69,28 @@
 #    return z
 #print(add(9, 3))
 
-def create_name(first, last):
-    first = first.capitalize()
-    last = last.capitalize()
-    return first + " " + last
+#def create_name(first, last):
+#    first = first.capitalize()
+#    last = last.capitalize()
+#    return first + " " + last
 
-full_name = create_name("nakul", "verma")
+#full_name = create_name("nakul", "verma")
 
-print(full_name)
+#print(full_name)
+
+#---------------------------------------
+
+## Iterables = An object/collection that can return its element one at a time,
+#              allowing it to be iterated over in a loop
+
+#numbers = [1, 2, 3, 4, 5]
+
+#for item in reversed(numbers):
+#    print(item, end=" ")
+#print()
+
+my_dictionary = {"A": 2, "B": 4, "C": 12}
+
+for key, value in my_dictionary.items():
+    print(f"{key} = {value}")
+    
