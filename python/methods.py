@@ -89,8 +89,62 @@
 #    print(item, end=" ")
 #print()
 
-my_dictionary = {"A": 2, "B": 4, "C": 12}
+#my_dictionary = {"A": 2, "B": 4, "C": 12}
 
-for key, value in my_dictionary.items():
-    print(f"{key} = {value}")
-    
+#for key, value in my_dictionary.items():
+#    print(f"{key} = {value}")
+
+## -------------
+
+#import random
+
+#number = random.randint(1, 20)
+
+#print(number)
+
+#low = 1
+#high = 100
+#options = ("rock", "paper", "scissor")
+#cards = ["1", "2", "3", "4", "5", "6", "7", "J", "K", "Q", "A"]
+
+#number = random.randint(low, high)
+#number = random.random()
+#option = random.choice(options)
+#random.shuffle(cards)
+#print(cards)
+
+#--------------------------------------------------------
+
+## Membership operators = used to test wether a value or variable is found ina sequence
+#                         (string , list, tuple, set, or dictionary)
+#      1. in                     2. not in
+
+#word = "APPLE"
+
+#letter = input("Guess a letter in the secret word: ")
+
+#if letter not in word:
+#    print(f"{letter} was not found")
+#else:
+#    print(f"there is a {letter}")
+
+
+#fruits = {"banana", "mango", "apple"}
+
+#fruit = input("Enter the name of a fruit: ")
+
+#if fruit in fruits:
+ #   print(f"{fruit} is a fruit")
+#else:
+#    print(f"{fruit} was not a fruit")
+
+fruits = {"Apple": "A",
+          "Banana": "B",
+          "Mango": "M"}
+
+fruit = input("Enter the name of the fruit: ")
+
+if fruit in fruits:
+    print(f"{fruit}'s grade is {fruits[fruit]}")
+else:
+    print(f"{fruit} was not found.")#
