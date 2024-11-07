@@ -1,6 +1,13 @@
 # README.MD 
 
-A simple Python-based application that fetches real-time weather data from the OpenWeatherMap API. It provides current weather details and forecasts for cities worldwide.
+<p align="center">
+  <img src="https://img.shields.io/github/stars/nakul-py/git-hindi?style=social" alt="GitHub Stars"/>
+  <img src="https://img.shields.io/github/forks/nakul-py/git-hindi?style=social" alt="GitHub Forks"/>
+  <img src="https://img.shields.io/github/issues/nakul-py/git-hindi" alt="GitHub Issues"/>
+  <img src="https://img.shields.io/github/license/nakul-py/git-hindi" alt="License"/>
+</p>
+
+A simple Python-based repositoriey that have different python files and porjects.
 
 ## Table of Contents
 
@@ -8,33 +15,47 @@ A simple Python-based application that fetches real-time weather data from the O
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Configuration](#configuration)
 - [Contributing](#contributing)
 - [License](#license)
 ## Understanding github
 
-## Features
-
-- Fetches current weather data for any city.
-- Displays temperature, humidity, and weather conditions.
-- 5-day weather forecast.
-- Simple and intuitive command-line interface.
 
 ## Installation
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/weather-app.git
+    git clone https://github.com/nakul-py/git-hindi.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd weather-app
+    cd git-hindi
     ```
-3. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
+3. Make a new branch and then solve issues.
+   ```
+   git checkout -b branch-name
+   ``` 
+4.  Add files that you have been changed or updated.
     ```
+    git add .
+    or 
+    git add file_name
+    ```
+5. Commit the changes you have been made.
+   ```
+   git commit -m "message"
+   ```
+6. Push the file 
+   ```
+   git push --set-upstream origin branch-name
+   ```
+7. After the file get merged use this command to update your local repo.
+   ```
+   git switch main                         //switch to main branch
 
+   then
+
+   git pull                               // update your repo
+   ```
 -----------------------------------
 
 ## Usage
@@ -48,34 +69,8 @@ Example:
 
 1. Run the program:
     ```bash
-    python weather.py
+    python file_name.py
     ```
-2. Enter the name of the city to get the weather forecast.
-
-You can also use command-line arguments to specify the city directly:
-```bash
-python weather.py --city "New York"
-
-
----
-
-## Configuration
-
-If your project requires specific configuration, explain that.
-
-Example:
-```markdown
-## Configuration
-
-You need an API key from [OpenWeatherMap](https://openweathermap.org/) to use this application.
-
-1. Create a `.env` file in the root directory.
-2. Add your API key in the following format:
-    ```bash
-    API_KEY=your_api_key_here
-    ```
-
----
 
 ## Contributing
 
