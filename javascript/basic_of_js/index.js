@@ -84,7 +84,29 @@ let numbers = 30;
 
 //// PROFESSIONAAL WAY
 
-document.getElementById("mySubmit").onclick = function(){
-    username = document.getElementById("myText").value;
-    document.getElementById("myname").textContent = `Hello ${username}`
-}
+//document.getElementById("mySubmit").onclick = function(){
+ //   username = document.getElementById("myText").value;
+   // document.getElementById("myname").textContent = `Hello ${username}`
+//}
+
+//--------------------------------------------------------
+
+// ternary operator = a shortcut to if{} and else{} statements
+//                    helps to assign a variable based on a condition
+//                    condition ? codeIfTrue : codeIfFalse;
+
+//let age = 34;
+//let message = age >= 18 ?"You are an adult" : "you are a child";
+//console.log(message);
+
+//let time = 12;
+//let greeting = time <= 12 ?  "Good morning" : "Good evening";
+//console.log(greeting);
+
+//let isFruit = true;
+//let message = isFruit ? "This is a fruit" : "This is not a fruit";
+//console.log(message);
+
+let amount = 14;
+let discount = amount >= 100 ? 10 : 0;
+console.log(`your total is ${amount - amount * (discount/100)}`)
