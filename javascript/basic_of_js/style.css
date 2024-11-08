@@ -1,4 +1,21 @@
 body{
     font-family: Franklin Gothic Medium;
     font-size: 3;
+    text-align: center;
+}
+
+#myButton{
+    padding: 10px 20px;
+    font-size: 3em;
+    color: whitesmoke;
+    background-color: rgb(240, 7, 209);
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.25s;
+}
+#myButton:hover{
+    background-color: blueviolet;
+}
+#myLabel{
+    font-size: 5em;
 }
