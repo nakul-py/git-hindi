@@ -1,6 +1,8 @@
+/*  random number generator program
+
 body{
     font-family: Franklin Gothic Medium;
-    font-size: 3;
+    font-size: 10;
     text-align: center;
 }
 
@@ -18,4 +20,34 @@ body{
 }
 #myLabel{
     font-size: 5em;
+}*/
+
+body{
+    font-family: Arial;
+    font-size: 2em;
+}
+
+#mySubmit{
+    font-size: 2rem;
+    color: beige;
+    background-color: hsl(332, 100%, 50%);
+    cursor: pointer;
+    border-color: chartreuse;
+    border-radius: 25px;
+    border-width: 5px;
+}
+
+#mySubmit:hover{
+    background-color: blueviolet;
+    border-color: gold;
+}
+#myText{
+    font-size: 2rem;
+    padding: 10px 20px;
+    background-color: darkturquoise;
+    color: black;
+}
+
+#myText:hover{
+    background-color: ghostwhite;
 }
