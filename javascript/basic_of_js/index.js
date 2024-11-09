@@ -144,7 +144,7 @@ switch(day){
     break;
 }*/
 
-let testScore = 94;
+/*let testScore = 94;
 let Grade;
 
 switch(true){
@@ -176,4 +176,49 @@ switch(true){
                 Grade = "Fail"
 }
 
-console.log(Grade);
+console.log(Grade);*/
+
+// -----------------------------------------------
+
+// String methods = allow you to manipulate and work with text (strings)
+
+//let username = "Nakull";
+
+//console.log(username.charAt(3));
+//console.log(username.indexOf("k"));
+//console.log(username.lastIndexOf("l"))
+//console.log(username.length);
+//console.log(username.trim());
+//console.log(username.repeat(10));
+//console.log(username.replace("a", "b"));
+
+
+//let phoneNumber = "123-456-7891";
+
+//phoneNumber = phoneNumber.padStart(16, "-");
+//phoneNumber = phoneNumber.padEnd(20, "-");
+//console.log(phoneNumber);
+
+// string slicing = creating a substring 
+//                  from a portion of another string
+
+//                  string.slice(start, end)
+
+/*const fullname = "Nakul Verma";
+
+let firstname = fullname.slice(0, 5);
+let lastname = fullname.slice(6, 13);
+
+let firstchar = fullname.slice(0,11);
+let lastchar = fullname.slice(-11);
+
+console.log(firstchar);
+console.log(lastchar);*/
+
+const email = "abcd@gmail.com";
+
+let username = email.slice(0, email.indexOf("@"));
+let extensions = email.slice(email.indexOf("@") + 1);
+
+console.log(username);
+console.log(extensions);
