@@ -107,6 +107,73 @@ let numbers = 30;
 //let message = isFruit ? "This is a fruit" : "This is not a fruit";
 //console.log(message);
 
-let amount = 14;
-let discount = amount >= 100 ? 10 : 0;
-console.log(`your total is ${amount - amount * (discount/100)}`)
+//let amount = 14;
+//let discount = amount >= 100 ? 10 : 0;
+//console.log(`your total is ${amount - amount * (discount/100)}`)
+
+//__________________________________________________________________
+
+// SWITCH = can be an efficient replacement to many else if statements
+
+/*let day = 4;
+
+switch(day){
+  case 1:
+    console.log("It is Monday");
+    break;
+  case 2:
+    console.log("It is Tuesday");
+    break;
+  case 3:
+    console.log("It is Wednesday");
+    break;
+  case 4:
+    console.log("It is Thrusday");
+    break;
+  case 5:
+    console.log("It is Friday");
+    break;
+  case 6:
+    console.log("It is Saturday");
+    break;
+  case 7:
+    console.log("It is Sunday");
+    break;
+  default:
+    console.log(`${day} is not a day`)
+    break;
+}*/
+
+let testScore = 94;
+let Grade;
+
+switch(true){
+  case testScore >= 95:
+    Grade = "GRADE = TOPPER A+";
+    break;
+  case testScore >= 90:
+    Grade = "GEADE = A";
+    break;
+    case testScore >= 80:
+      Grade = "GRADE = B";
+      break;
+      case testScore >= 70:
+        Grade = "GRADE = C";
+        break;
+        case testScore >= 60:
+          Grade = "GRADE = D";
+          break;
+          case testScore >= 50:
+            Grade = " GRADE = E";
+            break;
+            case testScore >= 40:
+              Grade = "GRADE = F";
+              break;
+              case testScore >= 30:
+                Grade = "GRADE = G";
+                break;
+              default:
+                Grade = "Fail"
+}
+
+console.log(Grade);
