@@ -256,14 +256,50 @@ else{
   console.log("the weather is good");
 }*/
 
-/*  NOT
+  //NOT
 
-const issunny = true;
+/*const issunny = true;
 
 if(!issunny){
   console.log("it is not a sunny day");
 }
 else{
-  console.log("it is  sunny day");
+  console.log("it is sunny day");
 }*/
 
+//---------------------------------------------------------
+
+// while loop = repeat some code WHILE some condition is true
+
+/*let username = "";
+
+while(username === "" || username === null){
+  username = window.prompt(`Enter your username`);
+}
+  console.log(`Hello ${username}`);*/
+
+/*let username;
+
+do{
+  username = window.prompt(`Enter your username`);
+}while(username === "" || username === null)
+
+  console.log(`Hello ${username}`);*/
+
+/*let loggedin = false;
+let username;
+let password;
+
+while (!loggedin) {
+  username = window.prompt(`Enter your username`);
+  password = window.prompt(`Enter your password`);
+
+  if(username === "nakul" && password === "123"){
+    loggedin = true;
+    console.log("You are logged in!");
+  }
+  else{
+    console.log("Invalid credentials! Please try again!");
+  }
+}*/
+  
