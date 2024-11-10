@@ -215,10 +215,55 @@ let lastchar = fullname.slice(-11);
 console.log(firstchar);
 console.log(lastchar);*/
 
-const email = "abcd@gmail.com";
+/*const email = "abcd@gmail.com";
 
 let username = email.slice(0, email.indexOf("@"));
 let extensions = email.slice(email.indexOf("@") + 1);
 
 console.log(username);
-console.log(extensions);
+console.log(extensions);*/
+
+//----------------------------------------------------------
+
+// Logical operators = used to combine or manipulate boolean values
+//                     (true or false)
+
+//                      AND = &&
+//                      OR  = ||
+//                      NOT = !
+
+/*  AND
+
+const temp = 23;
+
+if(temp > 0 && temp <= 30){
+    console.log("The weather is Good");
+}
+
+else{
+  console.log("the weather is bad");
+}*/
+
+/*   OR
+
+const temp = 234;
+
+if(temp <= 0 || temp > 30){
+    console.log("The weather is bad");
+}
+
+else{
+  console.log("the weather is good");
+}*/
+
+/*  NOT
+
+const issunny = true;
+
+if(!issunny){
+  console.log("it is not a sunny day");
+}
+else{
+  console.log("it is  sunny day");
+}*/
+
