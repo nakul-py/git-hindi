@@ -203,3 +203,20 @@ isEven(235)*/
 }
 
 isValidEmail("apple.com");*/
+
+// --------------------------------------
+
+// Array = a variable like structure that can hold more than 1 value
+
+let fruit = ["apple","banana","mango", "orange"];
+
+//fruit.push("watermelon")
+//fruit.pop();
+//fruit.unshift("orange");
+//fruit.shift();
+
+//console.log(fruit[2]);
+
+let fruitNum = fruit.length;
+let fruitIdx = fruit.indexOf("orange");
+//console.log(fruitIdx);
