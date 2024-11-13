@@ -63,13 +63,13 @@ document.getElementById("mySubmit").onclick = function(){
 
 // RANDOM NUMBER GENERATOR
 
-/*
-const min = 50;
+
+/*const min = 50;
 const max = 100;
 
 let randomNum = Math.floor(Math.random() * ((max + 1) - min)) + min ;
  
-console.log(randomNum)*/
+//console.log(randomNum)*/
 
 /*const myButton = document.getElementById("myButton");
 const myLabel = document.getElementById("myLabel");
@@ -80,8 +80,8 @@ let randomNum;
 myButton.onclick = function(){
     randomNum = Math.floor(Math.random() * max) + min;
     myLabel.textContent = randomNum;
-}*/
-
+}
+*/
 //---------------------------------------------------------
 
 // IF statements = ia a condition is true, execute some code
@@ -107,7 +107,7 @@ else{
 
 
 
-const myText = document.getElementById("myText");
+/*const myText = document.getElementById("myText");
 const mySubmit = document.getElementById("mySubmit");
 const resultA = document.getElementById("resultA");
 
@@ -135,4 +135,71 @@ else{
     resultA.textContent = `you must be 20+ to enroll for this site`;
 }
 }
- 
+ */
+
+//-----------------------------------------------------------------
+
+// function = A section of reusable code.
+//            Declare code once, use it whenever you want.
+//            Call the function to execute that code. 
+
+/*function happyBirthday(username, age) {
+    console.log("Happy birthday to you 1!")
+    console.log("Happy birthday to you 2!")
+    console.log(`Happy birthday to you ${username}`)
+    console.log("Happy birthday to you 4!")
+    console.log(`Happy are now ${age} yerars old`)
+}
+happyBirthday("Nakul", 20);*/
+
+/*function add(x ,y){
+
+    let result = x + y;
+    console.log(result);
+}
+
+add(343545,1);*/
+
+/*function subtract(x, s){
+    let result = x - s;
+    console.log(result);
+}
+
+subtract(323, 1);*/
+
+/*function multiply(a, b){
+    let apple = a * b;
+    console.log(apple);
+}
+
+multiply(12,5);*/
+
+/*function divide(c ,d) {
+    let fruit = Math.floor (c / d);
+    console.log(fruit);
+}
+
+divide(312, 2)*/
+
+/*function isEven(number){
+
+    if(number % 2 === 0){
+        console.log(`${number} is even number`)
+    }
+    else{
+        console.log(`${number} is odd number`)
+    }
+}
+
+isEven(235)*/
+
+/*function isValidEmail(email){
+    if(email.includes("@")){
+        console.log(`${email} is a valid email`);
+    }
+    else{
+        console.log(`${email} is not valid email`);
+    }
+}
+
+isValidEmail("apple.com");*/
