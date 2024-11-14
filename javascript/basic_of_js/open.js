@@ -220,3 +220,24 @@ let fruit = ["apple","banana","mango", "orange"];
 let fruitNum = fruit.length;
 let fruitIdx = fruit.indexOf("orange");
 //console.log(fruitIdx);
+
+//-----------------------------------------
+
+// spread operator =   ... allows an iterable such as an
+//                     array or string to be explained
+//                     into seperate elements 
+//                     (upacks the elements)
+
+let numbers = [1, 2, 3, 4, 5];
+let maximum = Math.max(...numbers);
+let minimum = Math.min(...numbers);
+
+let username = "Nakul Verma";
+let apple = [...username].join(".")
+
+let vegs = ["carrot", "potato", "Tomato"];
+let animals = ["dog","cat", "loin", "tiger"]
+
+let zoo = [...vegs, ...animals, "apple", "mango"];
+
+console.log(zoo);
