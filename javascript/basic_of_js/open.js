@@ -228,7 +228,7 @@ let fruitIdx = fruit.indexOf("orange");
 //                     into seperate elements 
 //                     (upacks the elements)
 
-let numbers = [1, 2, 3, 4, 5];
+/*let numbers = [1, 2, 3, 4, 5];
 let maximum = Math.max(...numbers);
 let minimum = Math.min(...numbers);
 
@@ -240,4 +240,62 @@ let animals = ["dog","cat", "loin", "tiger"]
 
 let zoo = [...vegs, ...animals, "apple", "mango"];
 
-console.log(zoo);
+console.log(zoo);*/
+
+// ----------------------------------------------
+
+// rest parameters = (...rest) allow a function work with  a variable
+//                   number of arguments by building them into an array
+
+//          spread = expands an array into seperate elements
+//            rest = bundels seperate elements into an array
+
+/*function openBag(...foods) {
+    console.log(...foods);
+}
+function getfood(...foods) {
+    return foods;
+}
+const food1 = "Apple" ;
+const food2 = "potato" ;
+const food3 = "tomato";
+const food4 = "mango";
+
+//openBag(food1, food2, food3, food4);
+
+const foods = getfood(food1, food2, food3, food4);
+
+//console.log(foods);
+
+function sum(...numbers){
+
+    let result = 0;
+    for(let number of numbers){
+        result += number;
+    }
+    return result;
+}
+
+//const total = sum(1,5);
+
+//console.log(`Total is ${total}`);
+
+function getAverage(...numbers) {
+    let result = 0; 
+    for(let number of numbers){
+        result += number; 
+    }
+    return result / numbers.length;
+}
+
+//const total = getAverage(20, 10, 5 ,25, );
+
+//console.log(`Average answer is ${total}`);
+
+function combineString(...string){
+    return string.join(" ");
+}
+
+const fullname = combineString("Nakul", "verma");
+
+//console.log(fullname);*/
