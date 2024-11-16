@@ -299,3 +299,34 @@ function combineString(...string){
 const fullname = combineString("Nakul", "verma");
 
 //console.log(fullname);*/
+
+// -------------------------------------------------------
+
+// callback = a function that is passed as an argument
+//            to another function.
+
+/*hello(goodbye);
+
+function hello(callback){
+    console.log("Hello");
+    callback();
+}
+
+function wait(){
+    console.log("Leave!");
+}
+
+function goodbye(){
+    console.log("Goodbye!");
+}*/
+
+/*sum(displayConsole, 23, 27)
+
+function sum(callback, x, y){
+    let result = x + y;
+    callback(result);
+}
+
+function displayConsole(result){
+    console.log(result);
+}*/
