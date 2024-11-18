@@ -398,7 +398,7 @@ function display(element){
 // .map() = accepts a callback and applies that function
 //          to each element of an array, then return a new array
 
-const numbers = [1, 2, 3, 4, 5];
+/*const numbers = [1, 2, 3, 4, 5];
 const squares = numbers.map(square);
 const cubes = numbers.map(cube);
 console.log(cubes)
@@ -409,4 +409,82 @@ function square(element){
 
 function cube(element){
     return Math.pow(element, 3)
+}*/
+
+//-----------------------------------------------------------
+
+// .filter() = creates a new array by filtering out elements
+
+/*let numbers = [1, 2, 3, 4, 5, 6, 7];
+let evenNums = numbers.filter(isEven);
+let oddNums = numbers.filter(isOdd);
+
+console.log(oddNums);
+
+function isEven(element){
+    return element % 2 === 0;
 }
+
+function isOdd(element){
+    return element % 2 === 1;
+}*/
+
+/*const ages = [10,12,14, 15,18, 19, 20, 21, 22, 40];
+const adults = ages.filter(isAdult);
+const childs = ages.filter(isChild);
+
+console.log(childs);
+
+function isAdult(element){
+    return element >= 18;
+}
+
+function isChild(element){
+    return element < 18;
+}*/
+
+/*const words = ["apple", "banana", "pineapple", "kiwi",
+               "orange", "watermelon", "coconut"];
+
+const shortWords = words.filter(getShortWords);
+const longWords = words.filter(getLongWords);
+
+console.log(longWords);
+
+function getShortWords(element){
+    return element.length <= 6;
+}
+
+function getLongWords(element){
+    return element.length > 6;
+}*/
+
+//_________________________________________________________
+
+// .reduce() = reduce the elements of an array
+//             to a single value
+
+/*const prices = [100, 10, 34, 49, 82, 20];
+
+const total = prices.reduce(sum);
+
+console.log(total);
+
+function sum(accumulator, element){
+    return accumulator + element;
+}*/
+
+/*const grades = [23 ,34, 54, 20, 11, 94, 50, 30];
+
+const maximum = grades.reduce(getMax);
+const minimum = grades.reduce(getMin);
+
+console.log(minimum);
+
+function getMax(accumulator, element){
+    return Math.max(accumulator, element);
+}
+
+function getMin(accumulator, element){
+    return Math.min(accumulator, element);
+}*/
