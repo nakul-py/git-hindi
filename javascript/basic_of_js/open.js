@@ -489,6 +489,8 @@ function getMin(accumulator, element){
     return Math.min(accumulator, element);
 }*/
 
+// ---------------------------------------------------
+
 // arrow functions = a concise way to write funnction expressions
 //                   good for simple functions that you use only once
 //                   (parameters) => some code
@@ -510,3 +512,44 @@ const oddNums  = numbers.filter((element) => element % 2 !== 0)
 const total = numbers.reduce((accumulator, element) => accumulator + element)
 
 console.log(total);*/
+
+// -----------------------------------------------------------
+
+// object = A collection of related properties and/or methods
+//          Can represent real world objects(people, products, places)
+//          objects = {key:value,
+//                      function()}
+
+/*const person1 = {
+    firstName: "Chota",
+    lastName: "Bheem",
+    age: 22,
+    isEmployed: true,
+    sayHello: function(){console.log("Hello i am Chota Bheem")}
+}
+
+const person2 = {
+    firstName: "Jaggu",
+    lastName: "Bander",
+    age: 42,
+    isEmployed: false,
+    sayHello: function() {console.log("Hello i am Jaggu...")}
+}
+
+person1.sayHello();
+
+person2.sayHello();*/
+
+//---------------------------
+
+// this = reference to the object where THIS is used 
+//        (the object depends on the immediate context)
+//        person.name = this.name
+
+const person1 = {
+    name: "Babli",
+    favFood: "Roti",
+    sayHello: function(){console.log(`hi i am ${this.name}`)}
+}
+
+person1.sayHello();
