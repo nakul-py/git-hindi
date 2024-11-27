@@ -546,10 +546,55 @@ person2.sayHello();*/
 //        (the object depends on the immediate context)
 //        person.name = this.name
 
-const person1 = {
+/*const person1 = {
     name: "Babli",
     favFood: "Roti",
     sayHello: function(){console.log(`hi i am ${this.name}`)}
 }
 
-person1.sayHello();
+person1.sayHello();*/
+
+// -----------------------------------------------------
+
+// constructor = special method for defining the 
+//               properties and methods of objects 
+
+/*function Car(make, model, year, color){
+    this.make = make,
+    this.model = model,
+    this.year = year,
+    this.color = color
+    this.drive = function(){console.log(`You are now driving ${this.make}`)}
+    this.space = function(){console.log(`                                `)}
+       
+}
+
+const car1 = new Car("Car name: Mahindra Scorpio",
+                      "Model: N","Year: 2024", "Color: Black");
+const car2 = new Car("Car name: Mahindra Thar",
+                      "Model: 4x4","Year: 2023", "Color: Black");
+const car3 = new Car("Car name: Maruti Dzire",
+                      "Model: Swift","Year: 2020", "Color: Black");
+  
+  
+console.log(car1.make);
+console.log(car1.model);
+console.log(car1.year);
+console.log(car1.color);
+car1.drive();
+car1.space();
+
+console.log(car2.make);
+console.log(car2.model);
+console.log(car2.year);
+console.log(car2.color);
+car2.drive();
+car1.space();
+
+
+console.log(car3.make);
+console.log(car3.model);
+console.log(car3.year);
+console.log(car3.color);
+car3.drive();
+*/
