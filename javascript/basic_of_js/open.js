@@ -483,8 +483,30 @@ console.log(minimum);
 
 function getMax(accumulator, element){
     return Math.max(accumulator, element);
-}
-
+} 
+ 
 function getMin(accumulator, element){
     return Math.min(accumulator, element);
 }*/
+
+// arrow functions = a concise way to write funnction expressions
+//                   good for simple functions that you use only once
+//                   (parameters) => some code
+
+/*
+const hello = (name , age) => {console.log(`Hello ${name}`)
+                              console.log(`you are ${age} year's old`)}
+
+hello("Nakul", 20);*/
+
+//setTimeout( () => console.log("Hello"), 3000);
+
+/*const numbers = [1,2,3,4,5,6,7,8,9,10];
+
+const squares = numbers.map((element) => Math.pow(element,2));
+const cubes = numbers.map((element) => Math.pow(element, 3));
+const evenNums = numbers.filter((element) => element % 2 === 0)
+const oddNums  = numbers.filter((element) => element % 2 !== 0)
+const total = numbers.reduce((accumulator, element) => accumulator + element)
+
+console.log(total);*/
