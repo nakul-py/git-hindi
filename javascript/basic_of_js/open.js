@@ -598,3 +598,37 @@ console.log(car3.year);
 console.log(car3.color);
 car3.drive();
 */
+
+//-----------------------------------------------------
+
+// class = (Es6 feature) provides a more structural and cleaner way to work
+//         with objects compared to traditional constructor functions
+//         ex: static keyword, encapsulation, inheritance
+
+/*class Product{
+    constructor(name, price){
+        this.name = name;
+        this.price = price;
+    }
+
+    displayProduct(){
+        console.log(`Product: ${this.name}`);
+        console.log(`Price: $${this.price.toFixed(2)}`);
+    }
+
+    calculateTotal(salesTax){
+        return this.price + (this.price * salesTax);
+    }
+}
+
+const salesTax = 0.01;
+
+const product1 = new Product("Smart Phone", 200.11);
+const product2 = new Product("Huudy", 10.20);
+const product3 = new Product("Shirt", 13.20);
+
+product1.displayProduct();
+
+const total = product1.calculateTotal(salesTax);
+console.log(`Total price (with tax): $${total.toFixed(2)}`);*/
+
