@@ -726,3 +726,63 @@ console.log(fish.alive);
 rabbit.run();
 fish.swim();
 hawk.fly();*/
+
+//---------------------------------------------------------------
+
+// super = keyword is used in classes to call the constructor or
+//         access the properties and methods of a parent (superclass)
+//         this = this object
+//         super = the project
+
+class Animal{
+    constructor(name,age){
+        this.name = name;
+        this.age = age;
+    }
+
+    move(speed){
+        console.log(`The ${this.name} moves at a speed of ${speed}mph`);
+    }
+}
+class Loin extends Animal{
+    constructor(name, age, runSpeed){
+        super(name,age);
+        this.runSpeed = runSpeed;
+    }
+
+    run(){
+        console.log(`This ${this.name} can Run.`)
+        super.move(this.runSpeed);
+    }
+}
+class Shark extends Animal{
+    constructor(name, age, swimSpeed){
+        super(name,age);
+        this.swimSpeed = swimSpeed;
+    }
+
+    swim(){
+        console.log(`This ${this.name} can Swim.`)
+        super.move(this.swimSpeed);
+    }
+}
+class Vulture extends Animal{
+    constructor(name, age, flySpeed){
+        super(name,age);
+        this.flySpeed = flySpeed;
+    }
+
+    fly(){
+        console.log(`This ${this.name} can Fly.`)
+        super.move(this.flySpeed);
+    }
+}
+
+const loin = new Loin("Loin", 50, 130);
+const shark = new Shark("Shark", 90, 150);
+const vulture = new Vulture("Vulture", 25, 200);
+
+console.log(loin.name);
+console.log(vulture.flySpeed);
+
+shark.swim();
