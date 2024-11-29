@@ -734,7 +734,7 @@ hawk.fly();*/
 //         this = this object
 //         super = the project
 
-class Animal{
+/*class Animal{
     constructor(name,age){
         this.name = name;
         this.age = age;
@@ -785,4 +785,114 @@ const vulture = new Vulture("Vulture", 25, 200);
 console.log(loin.name);
 console.log(vulture.flySpeed);
 
-shark.swim();
+shark.swim();*/
+
+//-------------------------------------------------------
+
+// getter = special method that makes a property readable
+// setter = special method that makes a property writeable
+
+// variable and modify a value reading/writing a property
+
+/*class Rectanle{
+
+    constructor(width, height){
+        this.width = width;
+        this.height = height;
+    }
+
+    set width(newWidth){
+        if(newWidth > 0){
+            this._width = newWidth;
+        }
+        else{
+            console.error("Width must be a posative number");
+        }
+    }
+
+    set height(newHidth){
+        if(newHidth > 0){
+            this._height = newHidth;
+        }
+        else{
+            console.error("Height must be a posative number");
+        }
+    }
+
+    get width(){
+        return `${this._width.toFixed(1)}cm`;
+    }
+
+    get height(){
+        return `${this._height.toFixed(1)}cm`;
+    }
+
+    get area(){
+        return `${(this._width * this._height).toFixed(1)}cm^2`;
+    }
+}
+
+const rectanle = new Rectanle(100, 50);
+
+console.log(rectanle.width);
+console.log(rectanle.height);
+console.log(rectanle.area);*/
+
+class Person{
+
+    constructor(firstName, lastName, age){
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+    }
+
+    set firstName(newFirstName){
+        if(typeof newFirstName === "string" && newFirstName.length > 0){
+            this._firstName = newFirstName;
+        }
+        else{
+            console.error("FirstName must be a non-empty string");
+        }
+    }
+
+    set lastName(newLastName){
+        if(typeof newLastName === "string" && newLastName.length > 0){
+            this._lastName = newLastName;
+        }
+        else{
+            console.error("LastName must be a non-empty string");
+        }
+    }
+
+    set age(newAge){
+        if(typeof newAge === "number" && newAge >= 0){
+            this._age = newAge;
+        }
+        else{
+            console.error("Age must be a non-empty number");
+        }
+    }
+
+    get firstName(){
+        return this._firstName;
+    }
+
+    get lastName(){
+        return this._lastName;
+    }
+
+    get age(){
+        return this._age;
+    }
+
+    get fullName(){
+        return this._firstName + " " + this._lastName;
+    }
+}
+
+const person = new Person("Nakul", "Verma", 20)
+
+console.log(person.firstName);
+console.log(person.lastName);
+console.log(person.fullName);
+console.log(person.age);
