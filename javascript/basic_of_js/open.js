@@ -208,7 +208,7 @@ isValidEmail("apple.com");*/
 
 // Array = a variable like structure that can hold more than 1 value
 
-let fruit = ["apple","banana","mango", "orange"];
+//let fruit = ["apple","banana","mango", "orange"];
 
 //fruit.push("watermelon")
 //fruit.pop();
@@ -217,8 +217,8 @@ let fruit = ["apple","banana","mango", "orange"];
 
 //console.log(fruit[2]);
 
-let fruitNum = fruit.length;
-let fruitIdx = fruit.indexOf("orange");
+//let fruitNum = fruit.length;
+//let fruitIdx = fruit.indexOf("orange");
 //console.log(fruitIdx);
 
 //-----------------------------------------
@@ -1045,3 +1045,53 @@ const person3 = new Person("mr. crab", 43,
 
 console.log(person1.address.city);*/
 
+//----------------------------------------------------------
+
+const fruits = [{name: "apple", color: "red", calories: 95}, 
+                {name: "mango", color: "yellow", calories: 55},
+                {name: "orange", color: "orange", calories: 65},
+                {name: "watermelon", color: "green", calories: 80},
+                {name: "papaya", color: "yellow", calories: 85},
+                {name: "banana", color: "yellow", calories: 70}];
+
+//fruits.push({name: "grapes", color: "green", calories: 62});
+//fruits.pop();
+//fruits.splice(1,2);
+
+// ========== forEach() ===========
+
+//fruits.forEach(fruit => console.log(fruit));
+
+/* ========== map() ============
+
+const fruitNames = fruits.map(fruit => fruit.name);
+const fruitColors = fruits.map(fruit => fruit.color);
+const fruitCalories = fruits.map(fruit => fruit.calories);
+
+console.log(fruitNames);
+console.log(fruitColors);
+console.log(fruitCalories);*/
+
+/* ============= filter() =============
+
+const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+const lowCalFruits = fruits.filter(fruit => fruit.calories < 75);
+const highCalFruits = fruits.filter(fruit => fruit.calories > 75);
+
+
+console.log(yellowFruits);
+console.log(lowCalFruits);
+console.log(highCalFruits);*/
+
+// ============ reduce() ============
+
+const maxFruit = fruits.reduce((max, fruit) => 
+                              fruit.calories > max.calories ?
+                              fruit : max);
+
+const minFruit = fruits.reduce((min, fruit) => 
+                              fruit.calories < min.calories ?
+                              fruit : min);
+  
+console.log(maxFruit);
+console.log(minFruit);
